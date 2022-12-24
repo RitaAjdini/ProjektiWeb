@@ -128,44 +128,12 @@ nav ul li a{
     height: auto;
 }
 
-/*teksti ne slider*/
-.slide {
-    position: absolute;
-    text-align: center;
-    position: relative;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    color: rgb(255, 255, 255);
-    padding: 10px;
-    font-size: 30px;
-    line-height: 1.5;
-    display: none;
-  }
-  
-  .slide-text {
-    position: absolute;
-    bottom: 200px;
-    left: 0;
-    right: 0;
-    color: rgb(189, 27, 27);
-    font-size: 30px;
-    text-align: center;
-    padding: 10px;
-  }
-  
-  .slide.active {
-    display: block;
-  }
-  
-  
-  @media (max-width: 768px) {
-    .slide {
-      font-size: 16px;
-      flex:auto;
-     
-    }
-  }
+
+
+
+
+
+
 
   /*fotoja me pershtrim anash*/
 .fp-container {
@@ -347,6 +315,51 @@ nav ul li a{
 
 
 /*----------------------------------*/
+
+
+
+/*-------------------
+----Kodi per Featured videos------
+*/
+
+.FeaturedVideos{
+  display:flex;
+  width:90%;
+  margin:0 auto;
+  flex-wrap:wrap;
+  justify-content: center;
+}
+
+
+
+
+.Video_Images{
+  display: block;
+  margin:15px 15px;
+}
+
+.FeaturedVideos a:hover{
+  box-shadow: 5px 10px 8px #3e3e3e;
+}
+
+.featuredContainer{
+  margin:10% 0 8% 0 ;
+}
+
+.featuredContainer h1{
+  text-align: center;
+  /*font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;*/
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:#555555;
+
+}
+
+/*--------------------------------------*/
+
+
+
+
+
 
 
 /*footer*/
