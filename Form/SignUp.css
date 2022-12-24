@@ -6,6 +6,9 @@
 
 body {
     background:url('BackgroundTest1.webp');
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;/*deri qetu,background image responsive*/
 	font-family: 'Open Sans', sans-serif;
 	display: flex;
 	align-items: center;
@@ -75,13 +78,6 @@ body {
 	border-color: #e74c3c;
 }
 
-.form-control i {
-	visibility: hidden;
-	position: absolute;
-	top: 40px;
-	right: 10px;
-}
-
 
 .form-control small {
 	color: #e74c3c;
@@ -114,3 +110,17 @@ body {
 }
 
 
+a{
+
+	margin-left:12%;
+	text-decoration: none;
+	color:rgb(58, 58, 58);
+	font-family:Verdana, Geneva, Tahoma, sans-serif;	
+	font-weight:bold;
+}
+
+
+
+a:hover{
+	color:rgb(255, 97, 97);
+}

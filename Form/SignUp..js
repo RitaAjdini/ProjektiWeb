@@ -4,6 +4,8 @@ const email = document.getElementById('email');
 const password = document.getElementById('password');
 const password2 = document.getElementById('password2');
 
+var PasswordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/;
+
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
@@ -18,7 +20,9 @@ function checkInputs() {
 	
 	if(usernameValue === '') {
 		setErrorFor(username, 'Username cannot be blank');
-	} else {
+	} else if(usernameValue.length<4){
+		setErrorFor(username, 'Username must be longer than 4 characters');
+	}else{
 		setSuccessFor(username);
 	}
 	
@@ -32,14 +36,17 @@ function checkInputs() {
 	
 	if(passwordValue === '') {
 		setErrorFor(password, 'Password cannot be blank');
-	} else {
+	} else if(passwordValue!=PasswordRegex){
+		setErrorFor(password, 'Password is not valid');
+	}
+	else{
 		setSuccessFor(password);
 	}
 	
 	if(password2Value === '') {
 		setErrorFor(password2, 'Password2 cannot be blank');
 	} else if(passwordValue !== password2Value) {
-		setErrorFor(password2, 'Passwords does not match');
+		setErrorFor(password2, 'Passwords do not match');
 	} else{
 		setSuccessFor(password2);
 	}
@@ -58,7 +65,7 @@ function setSuccessFor(input) {
 }
 	
 function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/.test(email);
+	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{5,}))$/.test(email);
 }
 
 
