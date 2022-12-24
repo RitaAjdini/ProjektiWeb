@@ -24,8 +24,7 @@ body {
 }
 
 .header {
-	border-bottom: 1px solid #f0f0f0;
-	background-color: #f7f7f7;
+	background-color: rgba(180, 180, 180, 0.734);
 	padding: 20px 40px;
 }
 
@@ -34,7 +33,7 @@ body {
     text-align:center;
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-size:30px;
-    color:rgb(4, 4, 4);
+    color:white;
 }
 
 .form {
