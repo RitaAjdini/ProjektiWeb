@@ -300,7 +300,7 @@ nav ul li a{
   display: flex;
   justify-content:center;
   align-items: center;
-  background-color:rgb(40, 65, 65);
+  background-color:rgb(26, 120, 175);
 }
 
 .Info_Teksti1 p{
@@ -315,7 +315,7 @@ nav ul li a{
 }
 
 .HorizonGame{
-  box-shadow: 20px 20px 13px rgba(14, 101, 160, 0.858);
+  box-shadow: 20px 20px 13px rgba(8, 50, 105, 0.858);
 }
 
 @media(max-width:1070px){
