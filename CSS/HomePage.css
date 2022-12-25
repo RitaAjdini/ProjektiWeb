@@ -130,34 +130,6 @@ nav ul li a{
 
 
 
-
-
-
-
-
-  /*fotoja me pershtrim anash*/
-.fp-container {
-    width: 100%;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    
-  }
-  
-  .fp1 {
-    flex: 1;
-   
-    
-  }
-  
-  @media (max-width: 768px) {
-    .fp-container {
-     margin-top: 20px;
-     margin-bottom: 30px;
-      flex-direction: column-reverse;
-     
-    }
-  }
   
   
    /*thenia*/
@@ -315,6 +287,65 @@ nav ul li a{
 
 
 /*----------------------------------*/
+
+
+
+/*Kodi per InfoGameFoto---------------------*/
+
+
+
+.infoTekstFoto1{
+  padding:6% 0 6% 6%;
+  margin:10% 0;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  background-color:rgb(10, 163, 252);
+}
+
+.Info_Teksti1 p{
+  padding:5% 22% 3% 5%;
+  color:white;
+  font-size:16px;
+  text-shadow: 1px 1px black;
+  font-weight:bold;
+  font-family:sans-serif;
+  letter-spacing :normal;
+  line-height:22px;
+}
+
+.HorizonGame{
+  box-shadow: 20px 20px 13px rgba(14, 101, 160, 0.858);
+}
+
+@media(max-width:1070px){
+
+  .infoTekstFoto1{
+    flex-direction: column;
+    padding:6% 0 6% 6%;
+    margin:14% 0;
+  }
+
+  .HorizonGame{
+      width:100%;
+      height:auto;
+      justify-self: center;
+      align-self:center;
+      box-shadow: none;
+  }
+
+  .Info_Teksti1 p{
+      padding:5% 12%;
+      max-width:700px;
+      min-width:480px;
+  }
+  
+  
+}
+
+
+
+
 
 
 
