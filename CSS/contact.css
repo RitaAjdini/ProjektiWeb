@@ -301,7 +301,7 @@ section {
 }
 
 .footer-distributed{
-  background: #666;
+  background: rgb(107, 107, 107);
   box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   width: 100%;
@@ -353,7 +353,7 @@ section {
 }
 
 .footer-distributed .footer-company-name{
-  color:  rgb(83, 79, 79);
+  color:  rgb(94, 93, 93);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -366,7 +366,7 @@ section {
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #444343;
+  background-color:  #5a5a5a;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -385,7 +385,7 @@ section {
 
 .footer-distributed .footer-center p{
   display: inline-block;
-  color: #444343;
+  color: #575757;
   font-weight:400;
   vertical-align: middle;
   margin:0;
@@ -420,7 +420,7 @@ section {
 /* Footer Right */
 
 .footer-distributed{
-  background-color: #131212;
+  background-color: #2b2a2a;
 }
 
 .footer-distributed .footer-right{

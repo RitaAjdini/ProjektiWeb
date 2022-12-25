@@ -224,7 +224,7 @@ nav ul li a{
 }
 
 .footer-distributed .footer-company-name{
-  color:  rgb(83, 79, 79);
+  color:  rgb(92, 87, 87);
   font-size: 14px;
   font-weight: normal;
   margin: 0;
@@ -237,7 +237,7 @@ nav ul li a{
 }
 
 .footer-distributed .footer-center i{
-  background-color:  #444343;
+  background-color:  #525151;
   color: #ffffff;
   font-size: 25px;
   width: 38px;
@@ -256,7 +256,7 @@ nav ul li a{
 
 .footer-distributed .footer-center p{
   display: inline-block;
-  color: #444343;
+  color: #504f4f;
   font-weight:400;
   vertical-align: middle;
   margin:0;
@@ -291,7 +291,7 @@ nav ul li a{
 /* Footer Right */
 
 .footer-distributed{
-  background-color: #131212;
+  background-color: #1f1e1e;
 }
 
 .footer-distributed .footer-right{
