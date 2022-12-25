@@ -3,7 +3,7 @@ const username = document.getElementById('username');
 const password = document.getElementById('password');
 
 
-var PasswordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/;
+var PasswordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{7,}$/;
 
 form.addEventListener('submit', e => {
 	e.preventDefault();
@@ -24,14 +24,12 @@ function checkInputs() {
 	}
 	
 	
-	if(passwordValue === '') {
-		setErrorFor(password, 'Password cannot be blank');
-	} else if(passwordValue!=PasswordRegex){
-		setErrorFor(password, 'Password is not valid');
-	}
-	else{
+	if(PasswordRegex.test(passwordValue)){
 		setSuccessFor(password);
+	}else{
+		setErrorFor(password,"Password is not valid");
 	}
+	
 }
 
 function setErrorFor(input, message) {

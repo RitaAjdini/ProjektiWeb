@@ -6,6 +6,8 @@ const password2 = document.getElementById('password2');
 
 var PasswordRegex = /^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[#?!@$%^&*-]).{6,}$/;
 
+var EmailRegex = /^([A-Za-z0-9_\-.])+@([A-Za-z0-9_\-.])+\.([A-Za-z]{2,4})$/;
+
 form.addEventListener('submit', e => {
 	e.preventDefault();
 	
@@ -26,22 +28,17 @@ function checkInputs() {
 		setSuccessFor(username);
 	}
 	
-	if(emailValue === '') {
-		setErrorFor(email, 'Email cannot be blank');
-	} else if (!isEmail(emailValue)) {
-		setErrorFor(email, 'Not a valid email');
-	} else {
+	if(EmailRegex.test(emailValue)){
 		setSuccessFor(email);
-	}
-	
-	if(passwordValue === '') {
-		setErrorFor(password, 'Password cannot be blank');
-	} else if(passwordValue!=PasswordRegex){
-		setErrorFor(password, 'Password is not valid');
-	}
-	else{
-		setSuccessFor(password);
-	}
+	 }else{
+		 setErrorFor(email,"Email is not valid");
+	 }
+		 
+		 if(PasswordRegex.test(passwordValue)){
+					 setSuccessFor(password);
+		 }else{
+			 setErrorFor(password,"Password is not valid");
+		 }
 	
 	if(password2Value === '') {
 		setErrorFor(password2, 'Password2 cannot be blank');
@@ -64,9 +61,6 @@ function setSuccessFor(input) {
 	formControl.className = 'form-control success';
 }
 	
-function isEmail(email) {
-	return /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{5,}))$/.test(email);
-}
 
 
 
