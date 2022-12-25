@@ -293,6 +293,42 @@ nav ul li a{
 
 
 
+/*Kodi per Playstation Exclusives*/
+
+#ps-title{
+  text-align: center;
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  font-weight: bold;
+}
+
+.PS{
+  display: flex;
+  flex-direction: column;
+}
+
+.Playstation img{
+  margin:5% 5%;
+}
+
+.Playstation{
+  display:flex;
+  justify-content: space-evenly;
+}
+
+@media(max-width:1169px){
+.Playstation{
+  flex-direction: column;
+}
+
+
+
+}
+
+
+
+
+
+
 /*Kodi per InfoGameFoto---------------------*/
 
 
