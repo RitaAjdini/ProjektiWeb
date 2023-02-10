@@ -1,9 +1,8 @@
-body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
+*{
+  padding:0;
+  margin:0;
+  box-sizing:border-box;
 }
-
 
 header{
   background-color:white;
@@ -123,21 +122,39 @@ nav ul li a{
 /*krejt kodi per navbar*/
 
 
-.article-news-container:hover{
-  background-color: #c4c4c45b;
-  cursor: pointer;
+main{
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  margin-top:4%
 }
 
-.news-site-container {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	margin: 30px;
+.main-image h2{
+  font-size:30px;
+  margin-bottom:10px;
+}
+@media (max-width:639px) {
+  .main-image h2{
+    font-size:25px;
+
+  }
+}
+
+.card-1{
+  width: 20%;
+	margin: 10px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+	border-radius: 5px;
+  display: flex;
+  flex-wrap:wrap;
+  min-width:300px;
+
 }
 
 .article-image {
-  display: flex;
-  max-width: 100%;
+  min-width:90%;
 }
 
 .article-title{
@@ -146,58 +163,50 @@ nav ul li a{
 }
 
 
-.article-news-big-picture {
-
-  width: auto;
-  height: auto;
+.main-image{
   display:flex;
-  flex-direction:column;  
+  flex-wrap:wrap;
   justify-content:center;
-  align-items:center;
-  padding:20px 30px;
-  
 }
-.main-image{  
-  width:80%;
+
+.main-image .article-title{
+  display:block;
+}
+
+.image1{
+  width:100%;
   height:auto;
-  
-  
 }
 
-
-article {
-	width: 20%;
-	margin: 10px;
-	padding: 20px;
-	background-color: white;
-	box-shadow: 0 4px 8px rgba(0,0,0,0.2);
-	border-radius: 5px;
-  
-}
-
-
-@media screen and (max-width: 600px) {
-  .article-news-big-picture {
-    width: 85%;
-    align-items: center;
-  }
-  .article-news-container {
-    width: 100%;
-    align-items: center;
-    
-  }
-  
+@media(max-width:639px){
 
   .main-image{
-    
-    width: 100%;
-    height: auto;
+    width: 20%;
+    margin: 10px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    display: flex;
+    flex-wrap:wrap;
+    min-width:300px;
   }
-  .main-paragraph{
-    width: 100%;
-    font-size: 15px;
+
+  .image1{
+    min-width:100%;
   }
+
+
+  .main-image .article-title{
+    display:hidden;
+  }
+  
+
 }
+
+
+
+
 
 /*footer*/
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,500,300,700);
