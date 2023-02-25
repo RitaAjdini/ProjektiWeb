@@ -4,14 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up form</title>
-    <link rel="stylesheet" href="SignUp.css">
+    <title>LoginForm</title>
+    <link rel="stylesheet" href="CSS/LoginForm.css">
 </head>
 <body>
-
     <div class="container">
         <div class="header">
-            <h2>Create Account</h2>
+            <h2>Log In</h2>
         </div>
         <form id="form" class="form">
             <div class="form-control">
@@ -20,24 +19,14 @@
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Email</label>
-                <input type="email" placeholder="email" id="email" />
-                <small>Error message</small>
-            </div>
-            <div class="form-control">
                 <label for="username">Password</label>
                 <input type="password" placeholder="password" id="password"/>
                 <small>Error message</small>
             </div>
-            <div class="form-control">
-                <label for="username">Password check</label>
-                <input type="password" placeholder="password check" id="password2"/>
-                <small>Error message</small>
-            </div>
-            <a href="LoginForm.html">Already have an account?</a>
-            <button>Sign up</button>
+            <a href="SignUp.php">Don't have an account?</a>
+            <button>Log In</button>
         </form>
     </div>
-    <script src="SignUp..js"></script>
+   <!-- <script src="LoginForm.js"></script>-->
 </body>
 </html>
