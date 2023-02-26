@@ -43,9 +43,9 @@ if(isset($_POST['submit'])){
                   if ($user['email'] == $email && $user['password'] == $password && $user['username']==$username) {
                     return header("Location: signup-dashboard.php");
                   }else{
-                    return header("Location: ../../HomePage.php");
                     $signup = new SignupController;
                     $signup->insert($_POST);
+                    return header("Location: ../../HomePage.php");
                   }
                 }
                 }

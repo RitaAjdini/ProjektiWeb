@@ -25,10 +25,12 @@ public function insert($request){
 $query = $this->db->pdo->prepare('INSERT INTO users(username,email,password,passwordRepeat)VALUES(:username,:email,:password,:passwordRepeat)');
 $query->bindParam(':username',$request['username']);
 $query->bindParam(':email',$request['email']);
-$query->bindParam(':password',$request['password']);
-$query->bindParam(':passwordRepeat', $request['passwordRepeat']);
+
+$passwordHash = hash("md5",$request['password'],binary:false);
+$repeatHash = hash("md5",$request['passwordRepeat'],binary:false);
+$query->bindParam(':password',$passwordHash);
+$query->bindParam(':passwordRepeat', $repeatHash);
 $query->execute();
-return header('Location: signup-dashboard.php');
 }
 
 
@@ -45,8 +47,10 @@ $query = $this->db->pdo->prepare('UPDATE users  SET username=:username,email=:em
 $query->bindParam(':id',$id);
 $query->bindParam(':username',$request['username']);
 $query->bindParam(':email',$request['email']);
-$query->bindParam(':password',$request['password']);
-$query->bindParam(':passwordRepeat',$request['passwordRepeat']);
+$passwordHash = hash("md5",$request['password'],binary:false);
+$query->bindParam(':password',$passwordHash);
+$repeatHash = hash("md5",$request['passwordRepeat'],binary:false);
+$query->bindParam(':passwordRepeat', $repeatHash);
 $query->execute();
 return header('Location: signup-dashboard.php');
 
