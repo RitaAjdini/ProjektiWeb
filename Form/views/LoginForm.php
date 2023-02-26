@@ -1,3 +1,8 @@
+<?php
+
+require_once '../controllers/signup-controller.php';
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,19 +17,19 @@
         <div class="header">
             <h2>Log In</h2>
         </div>
-        <form id="form" class="form">
+        <form id="form" class="form" method="POST" action="validimiLogin.php">
             <div class="form-control">
-                <label for="username">Username</label>
-                <input type="text" placeholder="username" id="username" />
+                <label>Username</label>
+                <input type="text" placeholder="username" id="username" name="username" />
                 <small>Error message</small>
             </div>
             <div class="form-control">
-                <label for="username">Password</label>
-                <input type="password" placeholder="password" id="password"/>
+                <label>Password</label>
+                <input type="password" placeholder="password" id="password" name="password"/>
                 <small>Error message</small>
             </div>
             <a href="SignUp.php">Don't have an account?</a>
-            <button>Log In</button>
+            <button name='submit'>Log In</button>
         </form>
     </div>
    <!-- <script src="LoginForm.js"></script>-->
