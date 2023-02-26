@@ -41,6 +41,7 @@ if(isset($_POST['submit'])){
                     global $Adminat;
                     foreach ($Adminat as $user) {
                   if ($user['email'] == $email && $user['password'] == $password && $user['username']==$username) {
+                    return header("Location: signup-dashboard.php");
                   }else{
                     return header("Location: ../../HomePage.php");
                     $signup = new SignupController;

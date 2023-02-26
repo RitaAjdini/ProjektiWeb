@@ -22,6 +22,8 @@ require_once '../controllers/signup-controller.php';
               <th>Email</th>
               <th>Password</th>
               <th>Password check</th>
+              <th></th>
+              <th></th>
             </tr>
         </thead>
         <tbody>
