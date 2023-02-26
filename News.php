@@ -14,22 +14,22 @@
 
         <ul class="nav-menu">
             <li class="nav-item">
-                <a href="HomePage.html" class="nav-link">Home </a>
+                <a href="HomePage.php" class="nav-link">Home </a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">News</a>
             </li>
 
             <li class="nav-item">
-              <a href="Reviews.html" class="nav-link">Reviews</a>
+              <a href="Reviews.php" class="nav-link">Reviews</a>
           </li>
 
             <li class="nav-item">
-                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="contact.php" class="nav-link">Contact</a>
             </li>
 
             <li class="nav-item">
-                <a href="AboutUs.html" class="nav-link">About us</a>
+                <a href="AboutUs.php" class="nav-link">About us</a>
             </li>
             <li class="nav-item">
                 <a href="Form/views/SignUp.php" class="nav-link">Sign Up</a>
@@ -106,13 +106,13 @@
         <h3>lujtaaa</h3>
   
         <p class="footer-links">
-          <a href="HomePage.html" class="link-1">Home</a>
+          <a href="HomePage.php" class="link-1">Home</a>
           
         
-          <a href="AboutUs.html">About</a>
+          <a href="AboutUs.php">About</a>
           
           
-          <a href="contact.html">Contact</a>
+          <a href="contact.php">Contact</a>
         </p>
   
         <p class="footer-company-name">lujtaaa © 2022</p>

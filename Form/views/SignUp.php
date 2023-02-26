@@ -2,13 +2,6 @@
 
 require_once '../controllers/signup-controller.php';
 
-
-$signup = new SignupController;
-if(isset($_POST['submit'])){
-$signup->insert($_POST);
-
-}
-
 ?>
 
 <!DOCTYPE html>
@@ -26,7 +19,7 @@ $signup->insert($_POST);
         <div class="header">
             <h2>Create Account</h2>
         </div>
-        <form id="form" class="form" method="POST" >
+        <form id="form" class="form" method="POST" action="validimi.php">
             <div class="form-control">
                 <label>Username</label>
                 <input type="text" placeholder="username" id="username" name="username" />
@@ -34,7 +27,7 @@ $signup->insert($_POST);
             </div>
             <div class="form-control">
                 <label>Email</label>
-                <input type="email" placeholder="email" id="email" name="email"/>
+                <input type="text" placeholder="email" id="email" name="email"/>
                 <small>Error message</small>
             </div>
             <div class="form-control">
